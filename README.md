@@ -16,6 +16,7 @@
 
 - markdown
 - Javascript
+- sécurité web
 
 <h2>compétences inconnues :</h2>
 
