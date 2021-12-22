@@ -9,11 +9,12 @@
 <body>
 
 		
-	<form action="#" method="post">
+	<form novalidate action="#" method="post">
+<!--novalidate permet de retirer les validation du navigateur et donc que mon script ait le contrôle sur la validation-->
 		<h2 id="ins">Inscription</h2>	
 			<fieldset>
 				<legend>Identité</legend>
-				<p class="flex">
+				<p>
 					<label>Nom :
 					<input type="text" name="nom"></label>
 
@@ -23,14 +24,14 @@
 					<label>Age :
 					<input type="number" name="age" min="18" max="99"></label>
 				</p>
-				<p class="flex">
+				<p>
 					<span><label>Sexe :</label>
 					<input type="radio" name="sex" value="F"> Féminin
 					<input type="radio" name="sex" value="M"> Masculin
 					<input type="radio" name="sex" value="A"> Autre</span>	
 				</p>
 				
-				<p class="flex">
+				<p>
 					<label>Nationalité (pays) :
 						<select name="national">
 					<option value="AFG">Afghanistan</option>
@@ -286,9 +287,9 @@
 					</label>
 				</p>
 			
-				<p class="flex">
+				<p>
 					<label>Date de naissance :
-					<input type="date" name="naissance"></label>
+					<input type="date" name="naissance" min=""></label>
 
 					<label>Pays de naissance :
 						<select name="pays">
@@ -544,7 +545,7 @@
 						</select>
 					</label>
 				</p>
-				<p class="flex">
+				<p>
 					<label>Métier exercé :
 					<input type="text" name="métier"></label>
 
@@ -555,11 +556,14 @@
 				
 			<fieldset>
 				<legend>Coordonnées</legend>
-					<p class="flex">
+					<div class="wrap">
 						<label>Email :
-						<input type="email" name="email"></label></p>
+						<div class="auto"><input type="email" id="email" name="email">
+						<span class="error" aria-live="polite"></span></div></label>
+						<!--aria-live pour que le message d'erreur soit lu par les lecteurs d'écran (mal voyants)-->
+					
 
-					<p class="flex">
+					<p>
 						<label>Adresse :
 						<input type="text" name="ad"></label>
 
@@ -571,16 +575,17 @@
 						<label>Ville :
 						<input type="text" name="ville">
 						</label>
-					</p>	
+					</p>
+					</div>	
 			</fieldset>
 
 			<fieldset>
 				<legend>Passeport</legend>
-					<p class="flex">
+					<p>
 						<label>Numéro :
 						<input type="text_format" name="numspass" maxlength="9"></label>
 					</p>
-					<p class="flex">
+					<p>
 						<label>Date de délivrance :
 						<input type="date" name="datepasson"></label>
 
@@ -593,6 +598,6 @@
 				<input type="submit" class="submit" value="Envoyer les réponses">
 			</div>
 	</form>
-	
+	<script type="text/javascript" src="form.js"></script>
 </body>
 </html>
