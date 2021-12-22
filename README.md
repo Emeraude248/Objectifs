@@ -11,11 +11,11 @@
 - GitHub
 - formulaire HTML
 - flexbox
+- Javascript
 
 ## compétences à aquérir :
 
 - markdown
-- Javascript
 - sécurité web
 
 <h2>compétences inconnues :</h2>
