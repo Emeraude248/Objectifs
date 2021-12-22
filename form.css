@@ -16,47 +16,167 @@
 
 body {
     margin : auto;
-    width: 800px;
+    width: auto;
+    background-color: #FDFEFE;
+    color: #49453F;
 }
+
+form {
+    width: auto;
+    border: 1px solid #E9E3D9;
+    border-radius: 10px;
+    padding: 0 2px 50px 2px;
+    background-color: #E9E3D9;
+}
+
+
 /*formulaire*/
 
-label {
-    margin-left, : 2px;
-    margin-right: 2px;
+#ins {
+    font-size: 1.8em;
+    text-shadow: 2px 2px 2px gray;
+    margin-left: 150px;
+    margin-bottom: 10px;
 }
 
 fieldset {
     border-radius: 10px;
+    border: 1px solid #49453F;
     box-shadow: 2px 2px 2px gray;
     margin-bottom: 3px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 5px;
+    background-color: #FBEEE6;
 }
 
 legend {
     font-family: Dayrom, serif;
     font-size: 1.3em;
     text-shadow: 2px 2px 2px gray;
-    color: ;
     margin: 1px;
+}
+
+label {
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 p {
     margin-top: auto;
 }
 
-.flex {
+/*flexbox*/
+
+.conteneur {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-/*éléments particuliers formulaire*/
+.element1 {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-#submit {
+.sous1 {
+    display: flex;
+}
+
+.element2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.adresse {
+    display: flex;
+}
+
+.cp {
+    display: flex;
+}
+
+.ville {
+    display: flex;
+}
+
+/*boutons formulaire*/
+
+.submit {
     padding: 3px;
     margin-top: 15px;
-    margin-right: 50px;
-    float: right;
+    border: 1px solid #49453F;
     border-radius: 5px;
+    background-color: #FDFEFE;
 }
 
+#float {
+    float: right;
+    margin-right: 50px;
+}
+
+/*input*/
+
+input[type=email] {
+    width : 169px;
+}
+
+.deux {
+    width: 18px;
+}
+
+.cinq {
+    width: 38px;
+}
+
+.select {
+    width: 300px;
+}
+
+/*champs invalides*/
+
+input:invalid {
+    border-color : red;
+}
+
+input:focus:invalid {
+    outline: none;
+}
+
+/*messages erreur*/
+
+
+.error {
+    display: block;
+    width: auto;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 5px 5px 5px;
+    position: absolute;
+    text-align: center;
+}
+
+.error.active {
+    padding: 3px 0 3px 0;
+}
+
+.errorcp {
+    display: block;
+    width: auto;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    text-align: center;
+}
+
+.errorcp.active {
+    padding: 3px 2px 3px 2px;
+}
+
+.auto {
+    width: 177px; /*?*/
+}
+/*taille de la boite contennat le message d'erreur, même taille que la boite input par défault*/
