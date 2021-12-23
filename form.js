@@ -139,3 +139,7 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
   }
 }, false);
+
+
+//retirer messages erreur quand reset ><
+
