@@ -5,12 +5,13 @@
 
 
 
+/* message erreur
 //coordonnées
-var form  = document.getElementsByTagName('form')[0];
+var form = document.getElementsByTagName('form')[0];
 var email = document.getElementById('email');
 var error = document.querySelector('.error');
 
-email.addEventListener("input", function (event) {
+email.addEventListener("input", function (event){
 
   if (email.validity.valid) {
     // S'il y a un message d'erreur affiché et que le champ
@@ -139,7 +140,77 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
   }
 }, false);
+*/
 
+/*
+let données = document.getElementsByTagName("input");
+console.log(données);
 
-//retirer messages erreur quand reset ><
+for (let i=0; i <données.length; i++) {
+  console.log(données[i].innerHTML);
+}
+*/
+
+/*
+//récup value dans console
+var nom = document.getElementsByName('nom');
+
+for (let i = 0; i < nom.length; i++) {
+  console.log(nom[i].value);
+}*/
+
+function getValue(){
+
+var nom = document.getElementById("nom").value;
+console.log(nom);
+
+var prenom = document.getElementById("prenom").value;
+console.log(prenom);
+
+var age = document.getElementById("age").value;
+console.log(age);
+
+var sexe = document.getElementById("sexe").value;
+console.log(sexe);
+
+var nation = document.getElementById("nation").value;
+console.log(nation);
+
+var dateN = document.getElementById("dateN").value;
+console.log(dateN);
+
+var paysN = document.getElementById("paysN").value;
+console.log(paysN);
+
+var job = document.getElementById("job").value;
+console.log(job);
+
+var secu = document.getElementById("secu").value;
+console.log(secu);
+
+var email = document.getElementById("email").value;
+console.log(email);
+
+var ad = document.getElementById("ad").value;
+console.log(ad);
+
+var cp = document.getElementById("cp").value;
+console.log(cp);
+
+var ville = document.getElementById("ville").value;
+console.log(ville);
+
+var pass1 = document.getElementById("pass1").value;
+var pass2 = document.getElementById("pass2").value;
+var pass3 = document.getElementById("pass3").value;
+var pass = pass1 + pass2 + pass3
+console.log(pass);
+
+var dateon = document.getElementById("dateon").value;
+console.log(dateon);
+
+var dateoff = document.getElementById("dateoff").value;
+console.log(dateoff);
+
+}
 
