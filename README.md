@@ -3,6 +3,7 @@
 ## compétences acquises :
 
 - bases et sémantique HTML
+- flexbox
 - bases et sémantique CSS
 - bases Python
 
@@ -10,15 +11,17 @@
 
 - GitHub
 - formulaire HTML
-- flexbox
-- Javascript
+- bases Javascript
 
 ## compétences à aquérir :
 
+- qu'est-ce qu'un framework
 - markdown
 - sécurité web
+- RegExp (javascript)
 
 <h2>compétences inconnues :</h2>
+
 
 ```html ```
 <h2>compétences inconnues :</h2>
