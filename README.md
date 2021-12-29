@@ -12,6 +12,7 @@
 - GitHub
 - formulaire HTML
 - bases Javascript
+- Bootstrap
 
 ## compétences à aquérir :
 
