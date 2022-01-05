@@ -16,6 +16,7 @@
 
 ## compétences à aquérir :
 
+- **bases JAVA**
 - qu'est-ce qu'un framework
 - markdown
 - sécurité web
