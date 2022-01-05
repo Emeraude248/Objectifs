@@ -5,20 +5,61 @@
 
 
 
-/* message erreur
+//message erreur
 //coordonnées
 var form = document.getElementsByTagName('form')[0];
 var email = document.getElementById('email');
 var error = document.querySelector('.error');
+var reset = document.getElementById('reset');
+
+
+
+
+form.addEventListener("reset", function (event) {
+
+  if (email.validity.valid||!email.validity.valid){
+    error.innerHTML = ""; 
+    error.className = "error";
+  }
+
+  if (secu.validity.valid||!secu.validity.valid){
+    errorsecu.innerHTML = ""; 
+    errorsecu.className = "error";
+  }
+  
+  if (cp.validity.valid||!cp.validity.valid){
+    errorcp.innerHTML = ""; 
+    errorcp.className = "error";
+  }
+  
+  if (pass1.validity.valid||!pass1.validity.valid){
+    errorpass1.innerHTML = ""; 
+    errorpass1.className = "error";
+  }
+
+  if (pass2.validity.valid||!pass2.validity.valid){
+    errorpass1.innerHTML = ""; 
+    errorpass1.className = "error";
+  }
+
+  if (pass3.validity.valid||!pass3.validity.valid){
+    errorpass1.innerHTML = ""; 
+    errorpass1.className = "error";
+  }
+
+}, false);
+
+
 
 email.addEventListener("input", function (event){
 
-  if (email.validity.valid) {
+  if (email.validity.valid){
     // S'il y a un message d'erreur affiché et que le champ
     // est valide, on retire l'erreur
     error.innerHTML = ""; // On réinitialise le contenu
     error.className = "error"; // On réinitialise l'état visuel du message
   }
+  
 }, false);
 
 form.addEventListener("submit", function (event) {
@@ -140,7 +181,7 @@ form.addEventListener("submit", function (event) {
     event.preventDefault();
   }
 }, false);
-*/
+
 
 /*
 let données = document.getElementsByTagName("input");

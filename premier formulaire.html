@@ -11,7 +11,7 @@
 <body>
 
 
-	<form action="#" method="post">
+	<form novalidate action="#" method="post">
 		<!--novalidate permet de retirer les validation du navigateur et donc que mon script ait le contrôle sur la validation-->
 		<h2 id="ins">Inscription</h2>
 		<fieldset>
@@ -718,7 +718,7 @@
 
 		</fieldset>
 		<div id="float">
-			<input type="reset" class="submit" value="Effacer le formulaire">
+			<input type="reset" class="submit" value="Effacer le formulaire" id="reset">
 			<input type="submit" class="submit" value="Envoyer les réponses" onclick="getValue()">
 		</div>
 	</form>
