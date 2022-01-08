@@ -3,16 +3,17 @@
 ## compétences acquises :
 
 - bases et sémantique HTML
+- formulaire HTML
 - flexbox
 - bases et sémantique CSS
-- bases Python
+- Bootstrap
 
 ## compétences en cours : 
 
 - GitHub
-- formulaire HTML
 - bases Javascript
-- Bootstrap
+- POO Javascript
+- REACT JS
 
 ## compétences à aquérir :
 
@@ -21,10 +22,3 @@
 - markdown
 - sécurité web
 - RegExp (javascript)
-
-<h2>compétences inconnues :</h2>
-
-
-```html ```
-<h2>compétences inconnues :</h2>
-```
