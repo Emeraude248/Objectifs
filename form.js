@@ -5,49 +5,12 @@
 
 
 
-//message erreur
+//messages erreurs
+
 //coordonnées
 var form = document.getElementsByTagName('form')[0];
 var email = document.getElementById('email');
 var error = document.querySelector('.error');
-var reset = document.getElementById('reset');
-
-
-
-
-form.addEventListener("reset", function (event) {
-
-  if (email.validity.valid||!email.validity.valid){
-    error.innerHTML = ""; 
-    error.className = "error";
-  }
-
-  if (secu.validity.valid||!secu.validity.valid){
-    errorsecu.innerHTML = ""; 
-    errorsecu.className = "error";
-  }
-  
-  if (cp.validity.valid||!cp.validity.valid){
-    errorcp.innerHTML = ""; 
-    errorcp.className = "error";
-  }
-  
-  if (pass1.validity.valid||!pass1.validity.valid){
-    errorpass1.innerHTML = ""; 
-    errorpass1.className = "error";
-  }
-
-  if (pass2.validity.valid||!pass2.validity.valid){
-    errorpass1.innerHTML = ""; 
-    errorpass1.className = "error";
-  }
-
-  if (pass3.validity.valid||!pass3.validity.valid){
-    errorpass1.innerHTML = ""; 
-    errorpass1.className = "error";
-  }
-
-}, false);
 
 
 
@@ -182,76 +145,100 @@ form.addEventListener("submit", function (event) {
   }
 }, false);
 
+//reset message erreur
 
-/*
-let données = document.getElementsByTagName("input");
-console.log(données);
 
-for (let i=0; i <données.length; i++) {
-  console.log(données[i].innerHTML);
-}
-*/
+form.addEventListener("reset", function (event) {
 
-/*
+  if (email.validity.valid||!email.validity.valid){
+    error.innerHTML = ""; 
+    error.className = "error";
+  }
+
+  if (secu.validity.valid||!secu.validity.valid){
+    errorsecu.innerHTML = ""; 
+    errorsecu.className = "error";
+  }
+  
+  if (cp.validity.valid||!cp.validity.valid){
+    errorcp.innerHTML = ""; 
+    errorcp.className = "error";
+  }
+  
+  if (pass1.validity.valid||!pass1.validity.valid){
+    errorpass1.innerHTML = ""; 
+    errorpass1.className = "error";
+  }
+
+  if (pass2.validity.valid||!pass2.validity.valid){
+    errorpass1.innerHTML = ""; 
+    errorpass1.className = "error";
+  }
+
+  if (pass3.validity.valid||!pass3.validity.valid){
+    errorpass1.innerHTML = ""; 
+    errorpass1.className = "error";
+  }
+
+}, false);
+
+
 //récup value dans console
-var nom = document.getElementsByName('nom');
-
-for (let i = 0; i < nom.length; i++) {
-  console.log(nom[i].value);
-}*/
 
 function getValue(){
 
 var nom = document.getElementById("nom").value;
-console.log(nom);
+console.log("Nom :", nom);
 
 var prenom = document.getElementById("prenom").value;
-console.log(prenom);
+console.log("Prénom :", prenom);
 
 var age = document.getElementById("age").value;
-console.log(age);
+console.log("Age :", age);
 
 var sexe = document.getElementById("sexe").value;
-console.log(sexe);
+console.log("Sexe :", sexe);
 
 var nation = document.getElementById("nation").value;
-console.log(nation);
+console.log("Pays :", nation);
 
 var dateN = document.getElementById("dateN").value;
-console.log(dateN);
+console.log("Date de naissance :", dateN);
 
 var paysN = document.getElementById("paysN").value;
-console.log(paysN);
+console.log("Pays de naissance :", paysN);
 
 var job = document.getElementById("job").value;
-console.log(job);
+console.log("Métier :", job);
 
 var secu = document.getElementById("secu").value;
-console.log(secu);
+console.log("Sécu :", secu);
 
 var email = document.getElementById("email").value;
-console.log(email);
+console.log("Email :", email);
 
 var ad = document.getElementById("ad").value;
-console.log(ad);
+console.log("Adresse :", ad);
 
 var cp = document.getElementById("cp").value;
-console.log(cp);
+console.log("CP :", cp);
 
 var ville = document.getElementById("ville").value;
-console.log(ville);
+console.log("Ville :", ville);
 
 var pass1 = document.getElementById("pass1").value;
 var pass2 = document.getElementById("pass2").value;
 var pass3 = document.getElementById("pass3").value;
 var pass = pass1 + pass2 + pass3
-console.log(pass);
+console.log("Passeport :", pass);
 
 var dateon = document.getElementById("dateon").value;
-console.log(dateon);
+console.log("Validité :", dateon);
 
 var dateoff = document.getElementById("dateoff").value;
-console.log(dateoff);
+console.log("Fin validité :", dateoff);
 
 }
 
+
+//dates ><

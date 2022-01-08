@@ -41,8 +41,8 @@
 							<label>Age :</label>
 						</div>
 						<div>
-							<input type="number" name="age" id="age" min="18" max="99">
-							<span class="errorage" id="age" aria-live="polite"></span>
+							<input type="text" name="age" id="age" oninput="this.value=this.value.replace(/^\d+$/,'').replace(/(..?)../g, '$1');" >
+							
 						</div>
 					</section>
 				</section>
@@ -323,6 +323,7 @@
 						</div>
 						<div>
 							<input type="date" id="dateN" min="">
+							<span class="errorDateN" id="dateN" aria-live="polite"></span>
 						</div>
 					</section>
 
@@ -649,7 +650,8 @@
 						</div>
 						<div>
 							<input class="cinq" id="cp" type="text_format" name="CP" maxlength="5" pattern="[0-9;A]{5}"
-								placeholder="00000">
+								placeholder="00000" oninput="this.value=this.value.replace(/^[a-zA-Z]/g, '');">
+								<!--limitation des lettres par oninput-->
 							<!--_format limite le nombre de caractère à rentrer foncitionne avec text (mais pas avec number, enfin il accepte le texte)
 							+ maxlentgh-->
 							<span class="errorcp" id="cp" aria-live="polite"></span>
