@@ -7,17 +7,16 @@
 - flexbox
 - bases et sémantique CSS
 - Bootstrap
+- bases Javascript
+- GitHub
 
 ## compétences en cours : 
 
-- GitHub
-- bases Javascript
-- POO Javascript
 - REACT JS
+- bases JAVA
 
 ## compétences à aquérir :
 
-- **bases JAVA**
 - qu'est-ce qu'un framework
 - markdown
 - sécurité web
