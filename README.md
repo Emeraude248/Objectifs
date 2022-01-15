@@ -17,7 +17,6 @@
 
 ## compétences à aquérir :
 
-- définir le DOM
 - qu'est-ce qu'un framework
 - markdown
 - sécurité web
